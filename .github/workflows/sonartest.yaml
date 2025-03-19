@@ -2,7 +2,7 @@ name: CI/CD workflow for Maven Build and Sonar Code scan
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 jobs:
   build:
@@ -22,8 +22,8 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-          -Dsonar.organization=insight1
-          -Dsonar.projectKey=insight1
+          -Dsonar.organization=prateeksriv1998-insight
+          -Dsonar.projectKey=prateeksriv1998-Insight_sonarclolud
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
