@@ -22,8 +22,8 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-          -Dsonar.organization=Prateek Srivastav
-          -Dsonar.projectKey=prateeksriv1998-insight
+          -Dsonar.organization=prateeksriv1998-insight
+          -Dsonar.projectKey=prateeksriv1998-Insight_sonarclolud
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
